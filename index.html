@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ProcessingDayAlcoi</title>
+	<meta charset=utf-8>
+	<link rel="icon" href="img/ico_pd.gif" type="image/gif" sizes="16x16">
+	<meta name=description content="processingday, processing, day, alcoi, alcoy, tirisiti, tereseta, blackface">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+	<link rel=stylesheet href="css/inputs.css">
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html {
+  		box-sizing: border-box;
+	}
+	a{
+		text-decoration: none;
+	}
+		body{
+			font-family: 'PT Serif', serif;
+			font-size: 20px;
+		}
+		.container{
+			width: 600px;
+			margin: auto;
+			padding: 40px 20px;
+		}
+		h1{
+			color: #7f5fce;
+			text-align: center;
+			font-size: 2em;
+			padding: 20px 0;
+		}
+		ul li {
+			list-style-type: none;
+			display: block;
+		}
+		p{
+			color: black;
+			padding: 5px 20px;
+			line-height: 1.4em;
+			text-align: left;
+		}
+		p a{
+			border-bottom: 1px solid;
+		}
+		fieldset{
+			width: 100%;
+			padding: 15px;
+			margin: 10px 0;
+			/*background: #D1D7DC;*/
+			border: 2px solid #7f5fce;
+		}
+		legend{
+			float: left;
+			padding: 10px;
+			width: 100%;
+			font-weight: 700;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id class="container">
+	<h1>Processing Community Day Alcoi</h1>
+	<p>El processing day is comming amb aquesta excusa quedarem per comboiar-se sincrònicament amb l'event mundial del <a href="https://day.processing.org/">processing day</a> així que estem mirant quin dia ens ve millor a totxs i quines històries fer. 👇🏿 </p>
+	<form class="form" action="index_submit" method="get" accept-charset="utf-8">
+		<fieldset>
+			<legend>nom</legend>
+			<div class="inputGroup">
+				<input type="text" value="nom">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>email</legend>
+			<div class="inputGroup">
+  				<input type="email" id="name" placeholder="hola@lprocessingday.org" required>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Quines coses preferiries fer</legend>
+		<div class="inputGroup">
+			<input id="option1" type="checkbox" name="option1" value=""><label class="imp" for="option1">Taller bàsic</label>
+		</div>
+		<div class="inputGroup">
+			<input id="option2" type="checkbox" name="option2" value=""><label class="imp" for="option2">Hackaton - programació conjunta</label>
+		</div>
+		<div class="inputGroup">
+			<input id="option3" type="checkbox" name="option3" value=""><label class="imp" for="option3">Partir d'un programa i rebentar-lo <span>free style</span></label>
+		</div>
+		<div class="inputGroup">
+			<input id="option4" type="checkbox" name="option4" value=""><label class="imp" for="option4">Quedada de frikeo. Exhibició de codi i guarreo</label>
+		</div>
+		<div class="inputGroup">
+			<input id="option5" type="checkbox" name="option5" value=""><label class="imp" for="option5">P4s3 d3 p4rt1c1p4r, sóc un 0bs3rv3r 👀</label>
+		</div>
+		</fieldset>
+		<fieldset>
+			<legend>Alguna vez has programado</legend>
+			<div class="inputGroup">
+				<input id="radio1" name="radio" type="radio"/>
+				<label class="imp" for="radio1">1</label>
+			</div>
+			<div class="inputGroup">
+				<input id="radio2" name="radio" type="radio"/>
+				<label class="imp" for="radio2">0</label>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Tria el dia</legend>
+			<div class="inputGroup">
+				<input id="optiond1" type="radio" name="radiod" value="">
+				<label class="imp" for="optiond1">Dissabte, 19/01/19</label>
+			</div>
+			<div class="inputGroup">
+				<input id="optiond2" type="radio" name="radiod" value="">
+				<label class="imp" for="optiond2">Dissabte, 26/01/19</label>
+			</div>
+			<div class="inputGroup">
+				<input id="optiond3" type="radio" name="radiod" value="">
+				<label class="imp" for="optiond3">Dissabte, 09/02/19</label>
+			</div>
+		</fieldset>
+		<input type="submit" value="envia">
+	</form>
+	</div>
+</body>
+</html>
