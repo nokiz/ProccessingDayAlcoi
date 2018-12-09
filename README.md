@@ -10,7 +10,7 @@ De momento.. aquí queda!
 - [x] Crear GIT.
 - [ ] Definir encuesta
 - [ ] Base de la web, Nokiz
-- [ ] p5.js de Bas
+- [X] p5.js de Bas
 - [ ] p5.js de NanDo
 - [X] p5.js de Franki
 - [X] p5.js de Magda
