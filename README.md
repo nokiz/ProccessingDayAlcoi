@@ -11,7 +11,7 @@ De momento.. aquí queda!
 - [ ] Definir encuesta
 - [ ] Base de la web, Nokiz
 - [X] p5.js de Bas
-- [ ] p5.js de NanDo
+- [X] p5.js de NanDo
 - [X] p5.js de Franki
 - [X] p5.js de Magda
 - [ ] p5.js de Nacho
