@@ -28,6 +28,11 @@
                     if (typeof(myp5) !== 'undefined') myp5.remove();
                     myp5 = new p5(sketch_frankz, 'background_sketch');
                     break;
+                case 4:
+                    console.log("Cargamos sketch de Nacho");
+                    if (typeof(myp5) !== 'undefined') myp5.remove();
+                    myp5 = new p5(sketch_nacho, 'background_sketch');
+                    break;
                 default:
             }
         });

@@ -19,7 +19,9 @@ body {
 .container {
     width: 600px;
     margin: auto;
-    padding: 80px 20px;
+    padding: 20px 20px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, .85);
 }
 
 h1 {
@@ -49,7 +51,7 @@ fieldset {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
-    /*background: #D1D7DC;*/
+    background: #FFFFFF;
     border: 2px solid #7f5fce;
 }
 
@@ -65,12 +67,14 @@ legend {
 */
 #bg_selector {
     position: relative;
-    top: 5px;
+    padding-top: 5px;
     left: 50%;
     width: 400px;
     margin-left: -200px;
     height: 50px;
     text-align: center;
+    background-color: rgba(255, 255, 255, .75);
+    height: 80px;
 }
 
 #bg_selector h6 { color: #7f5fce; font-size: 20px; }
