@@ -15,3 +15,4 @@ De momento.. aquí queda!
 - [X] p5.js de Franki
 - [X] p5.js de Magda
 - [ ] p5.js de Nacho
+- [X] Cambiador de Sketches en tiempo real
