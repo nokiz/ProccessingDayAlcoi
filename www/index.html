@@ -41,64 +41,64 @@
 		<p>Estem mirant quin dia ens ve millor a totxs i quines històries fer. 👇🏿 </p>
 		<p>Apunteu-vos!</p>
 
-		<form class="form" action="index_submit" method="get" accept-charset="utf-8">
+		<form id="form1" class="form" action="save" method="post" accept-charset="utf-8">
 			<fieldset>
 				<legend>Nom</legend>
 				<div class="inputGroup">
-					<input type="text" placeholder="nom">
+					<input type="text" name="nom" placeholder="nom">
 				</div>
 			</fieldset>
 			<fieldset>
 				<legend>eMail</legend>
 				<div class="inputGroup">
-					<input type="email" id="name" placeholder="hola@processingday.org" required>
+					<input type="email" name="email" id="name" placeholder="hola@processingday.org" required>
 				</div>
 			</fieldset>
 			<fieldset>
 				<legend>Quines coses preferiries fer?</legend>
 				<div class="inputGroup">
-					<input id="option1" type="checkbox" name="option1" value=""><label class="imp" for="option1">Taller bàsic</label>
+					<input id="option1" type="checkbox" name="activitats[]" value="1"><label class="imp" for="option1">Taller bàsic</label>
 				</div>
 				<div class="inputGroup">
-					<input id="option2" type="checkbox" name="option2" value=""><label class="imp" for="option2">Hackaton - programació conjunta</label>
+					<input id="option2" type="checkbox" name="activitats[]" value="2"><label class="imp" for="option2">Hackaton - programació conjunta</label>
 				</div>
 				<div class="inputGroup">
-					<input id="option3" type="checkbox" name="option3" value=""><label class="imp" for="option3">Partir d'un programa i rebentar-lo <span>free style</span></label>
+					<input id="option3" type="checkbox" name="activitats[]" value="3"><label class="imp" for="option3">Partir d'un programa i rebentar-lo <span>free style</span></label>
 				</div>
 				<div class="inputGroup">
-					<input id="option4" type="checkbox" name="option4" value=""><label class="imp" for="option4">Quedada de frikeo. Exhibició de codi i guarreo</label>
+					<input id="option4" type="checkbox" name="activitats[]" value="4"><label class="imp" for="option4">Quedada de frikeo. Exhibició de codi i guarreo</label>
 				</div>
 				<div class="inputGroup">
-					<input id="option5" type="checkbox" name="option5" value=""><label class="imp" for="option5">P4s3 d3 p4rt1c1p4r, sóc un 0bs3rv3r 👀</label>
+					<input id="option5" type="checkbox" name="activitats[]" value="5"><label class="imp" for="option5">P4ss3 d3 p4rt1c1p4r, sóc un 0bs3rv3r 👀</label>
 				</div>
 			</fieldset>
 			<fieldset>
 				<legend>¿Alguna vez has programado?</legend>
 				<div class="inputGroup">
-					<input id="radio1" name="radio" type="radio" />
+					<input id="radio1" name="experiencia" type="radio" value="1" />
 					<label class="imp" for="radio1">1</label>
 				</div>
 				<div class="inputGroup">
-					<input id="radio2" name="radio" type="radio" />
+					<input id="radio2" name="experiencia" type="radio" value="0" />
 					<label class="imp" for="radio2">0</label>
 				</div>
 			</fieldset>
 			<fieldset>
 				<legend>Tria el dia</legend>
 				<div class="inputGroup">
-					<input id="optiond1" type="radio" name="radiod" value="">
+					<input id="optiond1" type="radio" name="dia" value="19/01/2019">
 					<label class="imp" for="optiond1">Dissabte, 19/01/19</label>
 				</div>
 				<div class="inputGroup">
-					<input id="optiond2" type="radio" name="radiod" value="">
+					<input id="optiond2" type="radio" name="dia" value="26/01/2019">
 					<label class="imp" for="optiond2">Dissabte, 26/01/19</label>
 				</div>
 				<div class="inputGroup">
-					<input id="optiond3" type="radio" name="radiod" value="">
+					<input id="optiond3" type="radio" name="dia" value="09/02/2019">
 					<label class="imp" for="optiond3">Dissabte, 09/02/19</label>
 				</div>
 			</fieldset>
-			<input type="submit" value="envia">
+			<input id="envia" type="button" value="envia">
 		</form>
 	</div>
 

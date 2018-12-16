@@ -36,4 +36,19 @@
                 default:
             }
         });
+
+        $("#envia").click(function() {
+            console.log($("#form1").serialize());
+            $.ajax({
+                method: "POST",
+                url: "save.php",
+                data: $("#form1").serialize(),
+            })
+            .done(function( msg ) {
+                console.log( "Data Saved: " + msg );
+            })
+            .fail(function( jqXHR, textStatus ) {
+                //alert( "Request failed: " + textStatus );
+            });
+        });
     });
