@@ -38,14 +38,58 @@
         });
 
         $("#envia").click(function() {
+
+            // Comprobamos los datos
+            var name = $('#form1 input[name=nom]').val();
+            if (name == '') {
+                alert("Por favor, rellane el campo del nombre.\nSi te lo inventas, al menos, que mole :D");
+                return;
+            }
+
+            var email = $('#form1 input[name=email]').val();
+            if (name == '') {
+                alert("Por favor, rellane el campo del eMail, esto es fundamental.\n¿Cómo vamos a avisarte sino?");
+                return;
+            }
+
+            var activitats = "";
+            $('#form1 input[name="activitats[]"]:checked:enabled').each(function() {
+                activitats = $(this).val() + "," + activitats;
+            });
+
+            var experiencia = "";
+            $('#form1 input[name="experiencia[]"]:checked:enabled').each(function() {
+                experiencia = $(this).val() + "," + experiencia;
+            });
+            if (experiencia == '') {
+                alert("Nos falta: ¿Alguna vez has programado?");
+                return;
+            }
+
+            var dia = "";
+            $('#form1 input[name="dia[]"]:checked:enabled').each(function() {
+                dia = $(this).val() + "," + dia;
+            });
+
+            /*
+            console.log("Nom " + name);
+            console.log("EMail " + email);
+            console.log("Activitats " + activitats);
+            console.log("Experiencia " + experiencia);
+            console.log("Dia " + dia);
             console.log($("#form1").serialize());
+            */
+
             $.ajax({
                 method: "POST",
                 url: "save.php",
                 data: $("#form1").serialize(),
             })
             .done(function( msg ) {
-                console.log( "Data Saved: " + msg );
+                // console.log( "Data Saved: " + msg );
+                // console.log( msg );
+                alert("!Olé!\nRegistrado con éxito!\nTe informaremos de cualquier cosita relacionada con el evento ;)\nNada de spam, ni cosas raras.");
+
             })
             .fail(function( jqXHR, textStatus ) {
                 //alert( "Request failed: " + textStatus );

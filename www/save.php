@@ -20,7 +20,7 @@ $experiencia = mysqli_real_escape_string($link, $_POST["experiencia"]);
 $dia 		 = mysqli_real_escape_string($link, $_POST["dia"]);
 
 
-$sql1 = "INSERT INTO enquesta (nom, activitats, experiencia, dia) 
+$sql1 = "INSERT INTO enquesta (nom, activitats, experiencia, dia)
 		 VALUES ('$nom', '$activitats', $experiencia, '$dia')";
 $sql2 = "INSERT INTO email (email) VALUES ('$email')";
 

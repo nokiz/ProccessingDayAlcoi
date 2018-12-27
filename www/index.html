@@ -45,13 +45,13 @@
 			<fieldset>
 				<legend>Nom</legend>
 				<div class="inputGroup">
-					<input type="text" name="nom" placeholder="nom">
+					<input type="text" name="nom" id="name" placeholder="nom">
 				</div>
 			</fieldset>
 			<fieldset>
 				<legend>eMail</legend>
 				<div class="inputGroup">
-					<input type="email" name="email" id="name" placeholder="hola@processingday.org" required>
+					<input type="email" name="email" id="email" placeholder="hola@processingday.org" required>
 				</div>
 			</fieldset>
 			<fieldset>
@@ -75,26 +75,26 @@
 			<fieldset>
 				<legend>¿Alguna vez has programado?</legend>
 				<div class="inputGroup">
-					<input id="radio1" name="experiencia" type="radio" value="1" />
+					<input id="radio1" name="experiencia[]" type="radio" value="1" />
 					<label class="imp" for="radio1">1</label>
 				</div>
 				<div class="inputGroup">
-					<input id="radio2" name="experiencia" type="radio" value="0" />
+					<input id="radio2" name="experiencia[]" type="radio" value="0" />
 					<label class="imp" for="radio2">0</label>
 				</div>
 			</fieldset>
 			<fieldset>
 				<legend>Tria el dia</legend>
 				<div class="inputGroup">
-					<input id="optiond1" type="radio" name="dia" value="19/01/2019">
+					<input id="optiond1" type="radio" name="dia[]" value="19/01/2019">
 					<label class="imp" for="optiond1">Dissabte, 19/01/19</label>
 				</div>
 				<div class="inputGroup">
-					<input id="optiond2" type="radio" name="dia" value="26/01/2019">
+					<input id="optiond2" type="radio" name="dia[]" value="26/01/2019">
 					<label class="imp" for="optiond2">Dissabte, 26/01/19</label>
 				</div>
 				<div class="inputGroup">
-					<input id="optiond3" type="radio" name="dia" value="09/02/2019">
+					<input id="optiond3" type="radio" name="dia[]" value="09/02/2019">
 					<label class="imp" for="optiond3">Dissabte, 09/02/19</label>
 				</div>
 			</fieldset>
