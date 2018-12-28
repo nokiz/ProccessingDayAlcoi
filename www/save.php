@@ -1,9 +1,9 @@
 <?php
 
-$host = "db757156369.db.1and1.com";
-$db	  = "db757156369";
-$user = "dbo757156369";
-$pass = "@aE6jGg_yT";
+$host = "";
+$db   = "";
+$user = "";
+$pass = "";
 
 $link = mysqli_connect($host, $user, $pass, $db);
 
