@@ -15,12 +15,12 @@ if (mysqli_connect_errno()) {
 
 $nom   		 = mysqli_real_escape_string($link, $_POST["nom"]);
 $email 		 = mysqli_real_escape_string($link, $_POST["email"]);
-$activitats  = mysqli_real_escape_string($link, $_POST["activitats"]);
-$experiencia = mysqli_real_escape_string($link, $_POST["experiencia"]);
+$activitats  = implode(", ", $_POST["activitats"]);
+$experiencia = implode(", ", $_POST["experiencia"]);
 $dia 		 = mysqli_real_escape_string($link, $_POST["dia"]);
 
 
-$sql1 = "INSERT INTO enquesta (nom, activitats, experiencia, dia)
+$sql1 = "INSERT INTO enquesta (nom, activitats, experiencia, dia) 
 		 VALUES ('$nom', '$activitats', $experiencia, '$dia')";
 $sql2 = "INSERT INTO email (email) VALUES ('$email')";
 
@@ -28,7 +28,5 @@ mysqli_query($link, $sql1);
 mysqli_query($link, $sql2);
 
 mysqli_close($link);
-
-echo $_POST["activitats"];
 
 ?>
