@@ -9,25 +9,10 @@ De momento.. aquí queda!
 ### Tareas pendientes
 - [x] Crear GIT.
 - [ ] Definir encuesta
-- [ ] Base de la web, Nokiz
+- [X] Base de la web, Nokiz
 - [X] p5.js de Bas
 - [X] p5.js de NanDo
 - [X] p5.js de Franki
 - [X] p5.js de Magda
 - [ ] p5.js de Nacho
 - [X] Cambiador de Sketches en tiempo real
-
-PHPMyAdmin: https://my.ionos.es/phpmyadmin/db435128493
-
-SFTP host: home354066247.1and1-data.host
-SFTP user: u61742037-processing
-SFTP pass: pr0ce55ing_d4y@ALC
-
-MySQL
-host: db757156369.db.1and1.com
-db:   db757156369
-user: dbo757156369
-pass: @aE6jGg_yT
-
-http://processingdayalcoi.futureaction.net
-
